@@ -67,7 +67,7 @@ pipe_params = {
 }
 
 gs = GridSearchCV(pipe, pipe_params, cv=5)
-gs.fit(X_train, y_train)
+gs.fit(X_train, y_train)```
 
 ## Best Model
 
