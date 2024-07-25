@@ -51,23 +51,6 @@ We developed multiple models using `CountVectorizer` and different classifiers, 
 
 We created a pipeline with `CountVectorizer` and `MultinomialNB`, and used `GridSearchCV` to optimize the parameters.
 
-#### Pipeline and Parameters
-
-```
-pipe = Pipeline([
-    ('cvec', CountVectorizer()),
-    ('nb', MultinomialNB())
-])
-
-pipe_params = {
-    'cvec__max_features': [2000, 5000, 8000],
-    'cvec__min_df': [2, 3],
-    'cvec__max_df': [0.95, 0.98],
-    'cvec__ngram_range': [(1, 1), (1, 2)]
-}
-
-gs = GridSearchCV(pipe, pipe_params, cv=5)
-gs.fit(X_train, y_train)```
 
 ## Best Model
 
