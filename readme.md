@@ -53,7 +53,7 @@ We created a pipeline with `CountVectorizer` and `MultinomialNB`, and used `Grid
 
 #### Pipeline and Parameters
 
-```python
+```
 pipe = Pipeline([
     ('cvec', CountVectorizer()),
     ('nb', MultinomialNB())
